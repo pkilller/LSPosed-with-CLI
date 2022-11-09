@@ -6,6 +6,11 @@ A developer([@yearsyan](https://github.com/yearsyan)) added cli support for [LSP
 
 有位大佬([@yearsyan](https://github.com/yearsyan))为[LSPosed](https://github.com/LSPosed/LSPosed)添加了cli的支持，得以通过命令对module、scope等进行管理。但进行了PR后社区认为该命令缺少权限管控，所以没有合进主分支。
 
+*usage:*
+
+```
+/data/adb/lspd/bin/lsposed help
+```
 
 # LSPosed Framework
 
