@@ -148,8 +148,8 @@ public class ModulesHandler implements ICommandHandler {
     private void showUsage() {
         JCommander.newBuilder()
                 .addCommand("ls", new LSCommand())
-//                .addCommand("enable", new EnableCommand())
-//                .addCommand("disable", new DisableCommand())
+                .addCommand("enable", new EnableCommand())
+                .addCommand("disable", new DisableCommand())
                 .programName("lsposed modules")
                 .build()
                 .usage();
@@ -173,8 +173,8 @@ public class ModulesHandler implements ICommandHandler {
         // TODO: permission manager
         var jc = JCommander.newBuilder()
                 .addCommand("ls", lsCommand)
-//                .addCommand("enable", enableCommand)
-//                .addCommand("disable", disableCommand)
+                .addCommand("enable", enableCommand)
+                .addCommand("disable", disableCommand)
                 .addCommand("help", new Utils.HelpCommandStub())
                 .build();
         jc.parse(Arrays.copyOfRange(args, 1, args.length));
