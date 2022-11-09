@@ -155,9 +155,9 @@ public class ScopeHandler implements ICommandHandler {
     public void showUsage() {
         JCommander.newBuilder()
                 .addCommand(new LSCommand())
-//                .addCommand(new AppendCommand())
-//                .addCommand(new SetCommand())
-//                .addCommand(new RemoveCommand())
+                .addCommand(new AppendCommand())
+                .addCommand(new SetCommand())
+                .addCommand(new RemoveCommand())
                 .programName("lsposed scope")
                 .build()
                 .usage();
@@ -184,9 +184,9 @@ public class ScopeHandler implements ICommandHandler {
         // TODO: permission manager
         JCommander jc = JCommander.newBuilder()
                 .addCommand("ls", lsCommand)
-//                .addCommand("append", appendCommand)
-//                .addCommand("remove", removeCommand)
-//                .addCommand("set", setCommand)
+                .addCommand("append", appendCommand)
+                .addCommand("remove", removeCommand)
+                .addCommand("set", setCommand)
                 .addCommand("help", new Utils.HelpCommandStub())
                 .build();
 
